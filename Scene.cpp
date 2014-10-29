@@ -134,54 +134,54 @@ void Scene::initSquare()
     // 0 1 2
     m_vertices.push_back( -50.0f );    // X
     m_vertices.push_back( -50.0f );    // Y
-    m_vertices.push_back( 0.0f );      // Z
+    m_vertices.push_back( 50.0f );      // Z
 
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( -50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     m_vertices.push_back( -50.0f );
     m_vertices.push_back( 50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     // 3 4 5
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( -50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( 50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     m_vertices.push_back( -50.0f );
     m_vertices.push_back( 50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     // 6 7 8
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( -50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( -50.0f );
-    m_vertices.push_back( -100.0f );
+    m_vertices.push_back( -50.0f );
 
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( 50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     // 9 10 11
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( -50.0f );
-    m_vertices.push_back( -100.0f );
+    m_vertices.push_back( -50.0f );
 
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( 50.0f );
-    m_vertices.push_back( -100.0f );
+    m_vertices.push_back( -50.0f );
 
     m_vertices.push_back( 50.0f );
     m_vertices.push_back( 50.0f );
-    m_vertices.push_back( 0.0f );
+    m_vertices.push_back( 50.0f );
 
     // Indices
     m_indices.push_back( 0 );
@@ -201,43 +201,25 @@ void Scene::initSquare()
     m_indices.push_back( 11 );
 
     // Texture
-    // Front
-    m_textures.push_back( 0.0f );
-    m_textures.push_back( 0.0f );
+    for ( size_t i = 0; i < 2; ++i ) {
+        m_textures.push_back( 0.0f );
+        m_textures.push_back( 0.0f );
 
-    m_textures.push_back( 1.0f );
-    m_textures.push_back( 0.0f );
+        m_textures.push_back( 1.0f );
+        m_textures.push_back( 0.0f );
 
-    m_textures.push_back( 0.0f );
-    m_textures.push_back( 1.0f );
+        m_textures.push_back( 0.0f );
+        m_textures.push_back( 1.0f );
 
-    m_textures.push_back( 1.0f );
-    m_textures.push_back( 0.0f );
+        m_textures.push_back( 1.0f );
+        m_textures.push_back( 0.0f );
 
-    m_textures.push_back( 1.0f );
-    m_textures.push_back( 1.0f );
+        m_textures.push_back( 1.0f );
+        m_textures.push_back( 1.0f );
 
-    m_textures.push_back( 0.0f );
-    m_textures.push_back( 1.0f );
-
-    // Right
-    m_textures.push_back( 0.0f );
-    m_textures.push_back( 0.0f );
-
-    m_textures.push_back( 1.0f );
-    m_textures.push_back( 0.0f );
-
-    m_textures.push_back( 0.0f );
-    m_textures.push_back( 1.0f );
-
-    m_textures.push_back( 1.0f );
-    m_textures.push_back( 0.0f );
-
-    m_textures.push_back( 1.0f );
-    m_textures.push_back( 1.0f );
-
-    m_textures.push_back( 0.0f );
-    m_textures.push_back( 1.0f );
+        m_textures.push_back( 0.0f );
+        m_textures.push_back( 1.0f );
+    }
 }
 
 void Scene::genTexture()

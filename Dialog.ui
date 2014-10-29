@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>DrawingTriangleBy_glDrawArrays</string>
+   <string>Make Cube</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
